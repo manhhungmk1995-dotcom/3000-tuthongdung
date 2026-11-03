@@ -1,0 +1,25 @@
+===================================================================
+HƯỚNG DẪN ĐƯA APP HỌC 3000 TỪ TIẾNG ANH (LEXIFLOW 3000) LÊN WEBSITE
+===================================================================
+
+Trong gói tải về này có sẵn 2 phiên bản để bạn tùy chọn sử dụng:
+
+1. PHIÊN BẢN TẤT-CẢ-TRONG-MỘT (KHUYÊN DÙNG - DỄ NHẤT):
+   - File `index.html` (và bản sao `oxford_3000_master.html`):
+     Toàn bộ giao diện HTML, CSS, âm thanh, thuật toán SM-2 SRS và đầy đủ 3.000 từ vựng Oxford đã được đóng gói gọn trong 1 file duy nhất.
+   - Cách đưa lên website:
+     + Với Hosting cPanel / DirectAdmin / VPS (Apache, Nginx):
+       Chỉ cần upload file `index.html` vào thư mục `public_html/` (hoặc thư mục con ví dụ `public_html/hoc-tieng-anh/index.html`). Truy cập tên miền là chạy ngay lập tức!
+     + Với Netlify (Miễn phí, mất 10 giây):
+       Vào https://app.netlify.com/drop -> Kéo thả thư mục này vào trang web -> Có ngay đường link website chạy trực tuyến.
+     + Với GitHub Pages / Vercel / Cloudflare Pages:
+       Đẩy file `index.html` lên repository và bật Pages là hoạt động ngay.
+     + Với WordPress:
+       Bạn có thể upload file `oxford_3000_master.html` lên thư mục gốc của host và nhúng qua thẻ `<iframe src="/oxford_3000_master.html" style="width:100%; height:900px; border:none;"></iframe>` hoặc tạo Custom Page Template.
+
+2. PHIÊN BẢN TÁCH FILE MÃ NGUỒN (Thư mục `modular/`):
+   - Dành cho trường hợp bạn muốn tùy biến giao diện hoặc chỉnh sửa code dễ dàng:
+     + `modular/index.html`     : Khung giao diện HTML
+     + `modular/css/style.css`  : Hiệu ứng 3D Flashcard & tuỳ chỉnh giao diện
+     + `modular/js/vocab_data.js`: Cơ sở dữ liệu 3.000 từ vựng Oxford (A1, A2, B1, B2)
+     + `modular/js/app.js`      : Thuật toán lặp lại ngắt quãng SM-2, âm thanh & 4 chế độ luyện tập
